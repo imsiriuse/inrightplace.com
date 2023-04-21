@@ -1,7 +1,10 @@
 DEPLOYMENT
 git clone git@github.com:imsiriuse/inrightplace.com.git
+python setup.py sdist
+pip install dist/inrightplace-*.tar.gz
 
-START SERVER
-python -m manage makemigrations
-python -m manage migrate
-python -m manage runserver 0.0.0.0:8000
+$env:PYTHONPATH = "inrightplace"
+$env:DJANGO_SETTINGS_MODULE = "inrightplace.settings"
+$env:MOD_WSGI_APACHE_ROOTDIR= "C:\xampp\apache"
+$env:VCINSTALLDIR= "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC"
+
