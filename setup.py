@@ -8,8 +8,7 @@ setup(
         'django>=4.2',
         'django-bootstrap5>=23.1',
         'psycopg2>=2.9.6',
-        'python-dotenv>=1.0.0',
-        'mod_wsgi>=4.9.4'
+        'python-dotenv>=1.0.0'
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',
