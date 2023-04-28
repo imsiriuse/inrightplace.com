@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'food',
-    'django_bootstrap5'
+    'django_bootstrap5',
+    'import_export'
 ]
 
 MIDDLEWARE = [
